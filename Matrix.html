@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Red or Blue</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .center-buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .red,
+        .blue {
+            color: #000000;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .red:hover {
+            color: #ffffff;
+            background-color: red;
+        }
+
+        .blue:hover {
+            color: #ffffff;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">Take a Pill</h1>
+    <div class="center center-buttons">
+        <button class="red" id="button1">Red</button>
+        <button class="blue" id="button2">Blue</button>
+    </div>
+  <br>
+  <br>
+  <div class="center" id="results"></div>
+    <script>
+        document.getElementById("button1").addEventListener('click', function() {
+        document.getElementById("results").innerText = "Wake up!";
+        });
+
+        document.getElementById("button2").addEventListener('click', function() {
+        document.getElementById("results").innerText = "Remain in a pleasant trance...";
+        });
+    </script>
+</body>
+</html>
