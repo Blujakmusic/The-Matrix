@@ -1,2 +1,2 @@
 # The-Matrix
-Experimenting with JavaScript and CSS elements in this basic interactive web app. The question is, red or blue?
+Experimenting with JavaScript and CSS elements in this basic interactive web prompt. The question is, red or blue?
